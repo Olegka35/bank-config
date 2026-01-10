@@ -11,4 +11,4 @@ spring:
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
         provider:
           keycloak:
-            issuer-uri: http://host.docker.internal:8090/realms/bank
+            issuer-uri: ${AUTH_SERVER_URL}/realms/bank
