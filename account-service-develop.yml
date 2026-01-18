@@ -5,8 +5,8 @@ spring:
         jwt:
           issuer-uri: ${AUTH_SERVER_URL}/realms/bank
   datasource:
-    url: {ACCOUNT_DB_URL}
-    username: {ACCOUNT_DB_USERNAME}
-    password: {ACCOUNT_DB_PASSWORD}
+    url: ${ACCOUNT_DB_URL}
+    username: ${ACCOUNT_DB_USERNAME}
+    password: ${ACCOUNT_DB_PASSWORD}
   jpa:
     show-sql: true
