@@ -1,4 +1,9 @@
 spring:
+  cloud:
+    consul:
+      host: ${CONSUL_HOST}
+      discovery:
+        service-name: frontend-ui
   security:
     oauth2:
       client:

@@ -5,6 +5,10 @@ spring:
         jwt:
           issuer-uri: ${AUTH_SERVER_URL}/realms/bank
   cloud:
+    consul:
+      host: ${CONSUL_HOST}
+      discovery:
+        service-name: api-gateway
     gateway:
       server:
         webflux:

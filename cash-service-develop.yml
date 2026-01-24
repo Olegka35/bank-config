@@ -1,4 +1,9 @@
 spring:
+  cloud:
+    consul:
+      host: ${CONSUL_HOST}
+      discovery:
+        service-name: cash-service
   security:
     oauth2:
       resourceserver:
